@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css">
+  <title>Herman - Homepage</title>
+</head>
+<body class="bg-dark">
+
+  <!-- Navigasi -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">MyPorto</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about/index.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lainnya</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/contact/index.html">Kontak</a></li>
+              <li><a class="dropdown-item" href="/gallery/index.html">Galeri</a></li>
+              <li><hr class="dropdown-divider"></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Cari" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Cari</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  
+
+  <!-- Layout Utama -->
+  <div class="container-fluid bg-dark text-light mb-4" style="height: 100vh;">
+    <!-- Carousel Gambar -->
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/asset/gambar1.jpg" class="d-block w-100" alt="Pemandangan Pertama" style="height: 400px;">
+          <div class="carousel-caption">
+            <h5>Pemandangan Alam Pegunungan</h5>
+            <p>Keindahan alam yang memukau di pegunungan dengan suasana yang tenang.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/asset/gambar2.jpg" class="d-block w-100" alt="Pemandangan Kedua" style="height: 400px;">
+          <div class="carousel-caption">
+            <h5>Pemandangan Alam Pegunungan</h5>
+            <p>Keindahan alam yang memukau di pegunungan dengan suasana yang tenang.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/asset/gambar3.jpg" class="d-block w-100" alt="Pemandangan Ketiga" style="height: 400px;">
+          <div class="carousel-caption">
+            <h5>Pemandangan Alam Pegunungan</h5>
+            <p>Keindahan alam yang memukau di pegunungan dengan suasana yang tenang.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Sebelumnya</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Selanjutnya</span>
+      </button>
+    </div>
+
+
+   <!-- Bagian Profil -->
+<div class="row text-center align-items-center mt-4" data-aos="fade-up">
+  <div class="col-12">
+    <img src="/asset/4d7565e0-d3ce-4a84-9fe8-fcda2fdd5dda.jfif" class="card-img-top rounded-circle mx-auto mt-3" alt="Profil" style="width: 200px;">
+    <h2 class="mt-2">Muhamad Hermawan Taufiq</h2>
+    <i>Selamat Datang di Website Portofolio Saya</i>
+  </div>
+</div>
+
+<!-- Kartu Aksi -->
+<div class="row text-dark mt-4">
+  <div class="col-sm-4 g-4" data-aos="zoom-in" data-aos-delay="100">
+    <div class="card h-100"> <!-- Tambahkan class h-100 di sini -->
+      <div class="card-body">
+        <h5 class="card-title text-center">About</h5>
+        <p class="card-text">Pelajari lebih lanjut tentang saya, pengalaman, dan keahlian saya.</p>
+        <a href="/about/index.html" class="btn btn-dark w-100" style="height: 50px;">Klik</a>
+
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 g-4" data-aos="zoom-in" data-aos-delay="100">
+    <div class="card h-100"> <!-- Tambahkan class h-100 di sini -->
+      <div class="card-body">
+        <h5 class="card-title text-center">Gallery</h5>
+        <p class="card-text">Lihat foto Kenangan yang ada di saya galeri.</p>
+        <a href="/gallery/index.html" class="btn btn-dark w-100" style="height: 50px;">Klik</a>
+
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 g-4" data-aos="zoom-in" data-aos-delay="200">
+    <div class="card h-100"> <!-- Tambahkan class h-100 di sini -->
+      <div class="card-body">
+        <h5 class="card-title text-center">Contact</h5>
+        <p class="card-text">Hubungi saya untuk informasi lebih lanjut.</p>
+        <a href="/contact/index.html" class="btn btn-dark w-100" style="height: 50px;">Klik</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!--perintah uas star-->
+<div class="row text-center align-items-center mt-4" data-aos="fade-up">
+  <div class="col-12">
+    <h2 class="mt-2">Perintah Uts</h2>
+  </div>
+</div>
+<div class="row text-dark mt-4">
+  <div class="col-sm-4 g-4" data-aos="zoom-in" data-aos-delay="100">
+    <div class="card h-100"> <!-- Tambahkan class h-100 di sini -->
+      <div class="card-body">
+        <h5 class="card-title text-center">Struktur HTML Dasar</h5>
+        <p class="card-text">Pelajari lebih lanjut tentang elemen-elemen dasar dalam HTML, seperti <code>&lt;html&gt;</code>, <code>&lt;body&gt;</code>, dan <code>&lt;head&gt;</code>.</p>
+        <a href="/struktur_html/index.html" class="btn btn-dark w-100" style="height: 50px;">Klik</a>
+
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 g-4" data-aos="zoom-in" data-aos-delay="100">
+    <div class="card h-100"> <!-- Tambahkan class h-100 di sini -->
+      <div class="card-body">
+        <h5 class="card-title text-center">Formulir Pendaftaran</h5>
+        <p class="card-text">Belajar cara membuat form interaktif dengan HTML5, seperti input teks, tombol submit, dan validasi data pengguna.</p>
+        <a href="/formulir_pendaftaran/index.html" class="btn btn-dark w-100" style="height: 50px;">Klik</a>
+
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 g-4" data-aos="zoom-in" data-aos-delay="300">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title text-center">Penggunaan CSS</h5>
+        <p class="card-text">Ketahui cara menggunakan CSS untuk mempercantik tampilan website Anda.</p>
+        <a href="/pengguna_css/index.html" class="btn btn-dark w-100" style="height: 50px;">Klik</a>
+      </div>
+    </div>
+  </div>
+  <footer class="text-center text-light mt-4 p-3 bg-dark">
+    <p>&copy; 2024 Muhamad Hermawan Taufiq. All Rights Reserved.</p>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // durasi animasi dalam milidetik
+    easing: 'ease-in-out',
+    once: true // animasi hanya terjadi sekali
+  });
+</script>
+</body>
+</html>

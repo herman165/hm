@@ -1,0 +1,188 @@
+/* Variabel Warna */
+:root {
+  --bg-color: #141414;
+  --text-color: #111111;
+  --heading-color: #FFD700;
+  --hover-bg-color: #343a40;
+  --focus-border-color: #fafaf9;
+  --input-focus-color: rgba(240, 230, 140, 0.8);
+}
+
+/* Style Umum */
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+h1, h3 {
+  color: var(--heading-color);
+}
+
+.main-content {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.container-fluid {
+  color: #080808;
+}
+
+p, code {
+  font-size: 1.1rem;
+}
+
+/* Style About */
+.about-section {
+  padding: 50px 0;
+  background-color: #f8f9fa;
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+/* Style Contact */
+.contact-section {
+  padding: 100px 0;
+  background-color: #0c0d0e;
+}
+
+.contact-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.contact-form {
+  background-color: #837979;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(5, 0, 0, 0.1);
+}
+
+/* Tombol dan Form */
+.btn, .btn-light {
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover, .btn-light:hover {
+  background-color: var(--hover-bg-color);
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-control {
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: var(--focus-border-color);
+  box-shadow: 0 0 5px var(--input-focus-color);
+}
+
+/* Style Gallery */
+.gallery img {
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.gallery-item {
+  margin-bottom: 15px;
+}
+
+.carousel-item img {
+  max-height: 400px;
+  object-fit: cover;
+}
+
+/* Social Icons */
+.social-icons {
+  font-size: 2rem;
+  margin: 1rem;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  transition: transform 0.3s, color 0.3s ease;
+}
+
+.social-icons:hover {
+  color: #6bb2e2;
+  transform: scale(1.05);
+}
+
+/* Efek Hover dan Animasi */
+@keyframes moveIcons {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Terapkan animasi ke elemen */
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.profile-img {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.profile-text {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.carousel-caption h5, .carousel-caption p {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* Style Kartu dan Gambar Profil */
+.card {
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+img.rounded-circle {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+img.rounded-circle:hover {
+  transform: scale(1.05);
+}
+

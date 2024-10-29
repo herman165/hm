@@ -1,0 +1,19 @@
+body {
+    background: #232946;
+}
+
+.container {
+    max-width: 576px;
+}
+
+/* navbar start */
+.navbar-brand,
+.navbar-brand:hover,
+.nav-link {
+    color: #ffffff;
+}
+
+.navbar-nav .nav-link {
+    color: #fffffe !important;
+}
+/* navbar end */
